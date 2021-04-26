@@ -9,13 +9,14 @@ Hamburger.addEventListener('click' , () => {
         hamIcon.classList.remove('fa-navicon');
         hamIcon.classList.add('fa-remove');
         nav.classList.add('open');
-
+          Hamburger.classList.add('open')
         showMenu = true;
     }
     else{
         hamIcon.classList.add('fa-navicon');
         hamIcon.classList.remove('fa-remove');
         nav.classList.remove('open');
+        Hamburger.classList.remove('open')
         
         showMenu = false;
     }

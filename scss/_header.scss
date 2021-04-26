@@ -7,8 +7,9 @@
     background-color: #fff;
     box-shadow: 4px 2px 5px rgba(0,0,0,0.19);
     padding:0.6rem 1rem;
-     
-
+     position:sticky;
+     top:0;
+    
     &__right{
         display: flex;
         justify-content: space-evenly;  
@@ -41,31 +42,37 @@
     &__left{
          .hamburger{
              cursor:pointer;
-             transition: all 0.3s ease-in;
-         
+             position: absolute;
+             transition: all 0.5s ease-in;
+             z-index: 100;
+             top:20px;
+
+             &.open{
+                 left:270px;
+                
+             }
                  .fa{
                     transition: all 0.3s ease-in;
-                   
+                    
                  }
 
              .fa-remove{
-                 color:red;
-                
+                 color:#fff;
+                 font-size: 20px;
+               
              }
          }
        nav{
            background-color:black;
            position: fixed;
            top:0;
-           left:0;
-          
+           left:0;       
            width:50vh;
            height:100vh;
            padding:0.6rem 1.2rem;
-        //    overflow-y: scroll;
             transition: all 0.5s ease-in;
             transform: translate3d(-100% ,0,0);
-            // z-index:1;
+          
 
             &.open{
                 transform:translate3d(0,0,0);

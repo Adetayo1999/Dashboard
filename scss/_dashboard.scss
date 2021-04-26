@@ -1,7 +1,7 @@
 .dashboard{
     padding:0.6rem 0.8rem;
      display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(1 , 1fr);
     grid-gap:1em;
     margin:auto;
 
@@ -10,9 +10,11 @@
     background-color: #fff;
     padding: 0.6rem ;
     border-radius: 8px;
+    
     cursor:pointer;
     .fa{
          color:gray;
+         transition: all 0.2s ease-in;
     }
     .text{
         margin-top: 15px;
@@ -22,6 +24,9 @@
         padding:0 0.4rem;
        font-family: Poppins;
 
+       p{
+           color:gray;
+       }
     }
 
 
