@@ -16,18 +16,27 @@
     }
 
     body{
-        width:70%;
-        margin:auto;
-     
+   
+         display: flex;
+        
+
     }
-    .header{
+   
 
         nav{
              transition:none;
              transform: translate3d(0 ,0,0);
-          
+              position:sticky;
+              left:0;
+              top:0;
         } 
 
+        .header{
 
-    }
+            .hamburger{
+                visibility: hidden;
+            }
+        }
+
+    
 }

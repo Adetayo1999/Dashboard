@@ -13,4 +13,9 @@ ul{
 }
 body{
     background-color: #eee;
+    transition: background 0.5s ease-in;
+}
+
+body.dark{
+    background-color:black;
 }
